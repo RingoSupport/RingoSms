@@ -1,0 +1,73 @@
+# ==================================
+# Laravel + PHP
+# ==================================
+
+/vendor/
+/node_modules/
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+storage/*.key
+.env.testing
+/public/storage
+/storage/app/public
+/storage/debugbar
+.idea/
+.DS_Store
+*.log
+
+# Laravel Cache & Debug Files
+bootstrap/cache/*.php
+storage/*.log
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+
+# Laravel Telescope
+storage/telescope
+
+# Laravel Mix
+/public/hot
+/public/mix-manifest.json
+/public/css/*
+/public/js/*
+/public/build
+
+# ==================================
+# React
+# ==================================
+
+# dependencies
+**/node_modules/
+
+# testing
+**/coverage/
+
+# production
+**/build/
+
+# misc
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# system files
+*.DS_Store
+*.log
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.swp
+
+# Optional: OS-specific files
+Thumbs.db
+ehthumbs.db
