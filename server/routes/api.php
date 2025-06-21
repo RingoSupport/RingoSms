@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\WalletController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,10 @@ Route::prefix('auth')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout']);
         Route::post('/refresh', [AuthController::class, 'refresh']);
         Route::get('/me', [AuthController::class, 'me']); // optional: get current user info
+        Route::post('/debit', [WalletController::class, 'debit']);
+        Route::post('/credit', [WalletController::class, 'credit']);
+        Route::get('/wallet/balance', [WalletController::class, 'fetchWalletBalance']);
+        Route::get('/wallet/history', [WalletController::class, 'fetchWalletHistory']);
     });
 
 });
